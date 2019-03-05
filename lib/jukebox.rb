@@ -34,8 +34,11 @@ def play(songs)
     is_number = true
   end
   if is_number
-    if ()
-    song_name = songs[selection.to_i - 1]
+    if selection.to_i - 1 >= 0
+      song_name = songs[selection.to_i - 1]
+    else 
+      song_name = ""
+    end
   else
     song_name = selection
   end
