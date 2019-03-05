@@ -69,6 +69,8 @@ def run(songs)
     end
   end
 end
+
+run(songs)
 #def say_hello(name)
 #  "Hi #{name}!"
 #end
