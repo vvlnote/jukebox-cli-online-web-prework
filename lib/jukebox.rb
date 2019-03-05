@@ -51,10 +51,23 @@ end
 
 def run(songs)
   help
-  puts "Please enter a command:"
-  command = gets.chomp
-  case command
-  when
+  command = ""
+  while command == "exit"
+    puts "Please enter a command:"
+    command = gets.chomp
+    case command
+    when "list"
+      list(songs)
+    when "play"
+      play(songs)
+    when "help"
+      help
+    when "exit"
+      
+    else
+      
+    end
+  end
 end
 #def say_hello(name)
 #  "Hi #{name}!"
