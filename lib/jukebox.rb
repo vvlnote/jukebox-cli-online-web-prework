@@ -52,7 +52,7 @@ end
 def run(songs)
   help
   command = ""
-  while command == "exit"
+  while command != "exit"
     puts "Please enter a command:"
     command = gets.chomp
     case command
@@ -63,7 +63,7 @@ def run(songs)
     when "help"
       help
     when "exit"
-      
+      exit_jukebox
     else
       
     end
