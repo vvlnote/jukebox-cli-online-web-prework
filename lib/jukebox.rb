@@ -51,6 +51,8 @@ end
 
 def run(songs)
   help
+  puts "Please enter a command:"
+  command = gets.chomp
 end
 #def say_hello(name)
 #  "Hi #{name}!"
