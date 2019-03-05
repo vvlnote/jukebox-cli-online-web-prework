@@ -38,6 +38,11 @@ def play(songs)
   else
     song_name = selection
   end
+  if songs.include?(song_name)
+    puts "Playing <#{song_name}>"
+  else
+    puts "Invalid input, please try again"
+  end
 end
 
 def exit_jukebox
