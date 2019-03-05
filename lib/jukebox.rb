@@ -54,6 +54,7 @@ def run(songs)
   puts "Please enter a command:"
   command = gets.chomp
   case command
+  when
 end
 #def say_hello(name)
 #  "Hi #{name}!"
