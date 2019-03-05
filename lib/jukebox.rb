@@ -27,6 +27,17 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   selection = gets.chomp
+  song_number = -1
+  song_name = ""
+  is_number = false
+  if selection.to_i.to_s.eql? selection
+    is_number = true
+  end
+  if is_number
+    song_name = songs[selection.to_i - 1]
+  else
+    song_name = selection
+  end
 end
 
 def exit_jukebox
